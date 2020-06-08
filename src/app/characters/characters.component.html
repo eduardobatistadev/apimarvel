@@ -1,0 +1,12 @@
+
+<div class="row container fluid justify-content-center mx-auto">
+    <div *ngFor="let characters of allCharacters | async" class="card col-sm-8 col-md-6 col-12 col-lg-3 mb-5 ml-5" >
+    <img class="card-img-top" src="{{characters.thumbnail.path}}.{{characters.thumbnail.extension}}" alt="{{characters.name}}">
+    <div  class="card-body">
+                <h4 class="card-title">{{characters.name}}</h4>
+                <p class="card-text">{{characters.id}}</p>
+                <a href="#" class="btn btn-primary">Veja Mais</a>
+         </div>
+     </div>
+</div>
+
